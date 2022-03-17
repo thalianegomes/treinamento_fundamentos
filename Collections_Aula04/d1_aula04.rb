@@ -11,8 +11,15 @@ for i in (0..qtd-1)
     numeros.push(num)
 end
 
-puts ''
+puts ""
 numeros.each do |i|
  resultado = i ** 2
  puts("#{i} elevado a segunda potência é: #{resultado}")
 end
+
+=begin
+resultado = numeros.map do |i|
+    i ** 2
+end
+puts ("#{resultado}, ")
+=end
