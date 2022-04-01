@@ -2,26 +2,21 @@
 #Salvar a lambda em uma variável e passá-la como argumento de um método captalize_name
 #Chamar a lambda duas vezes dentro do método, passando um nome diferente em cada uma das vezes
 
+
 #letra_maiuscula = lambda do |name|
-#   name.capitalize()
+#   puts name.capitalize()
 #end
+
 letra_maiuscula = -> (name) {puts name.capitalize()}
 
-def capitalizeName(word)
-    puts word
-    #letra_maiuscula.call("oi")
+def capitalizeName(letra_maiuscula)
+    letra_maiuscula.call("thalianee")
+    letra_maiuscula.call("deu certo")
 end
-
 
 print "Informe uma palavra: "
 name = gets.chomp
 
-resultado_lambda = letra_maiuscula.call(name)
+letra_maiuscula.call(name)
 
-capitalizeName(resultado_lambda)
-
-letra_maiuscula.call("teste")
-#letra_maiuscula.("oi")
-
-
-#puts resultado_lambda 
+capitalizeName(letra_maiuscula)
